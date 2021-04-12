@@ -51,6 +51,7 @@ namespace UltraMinifier.ConsoleApp
             {
                 rest = rest.Replace(item, string.Empty);
             }
+
             _foundRawStyle = rest;
 
             foreach (Match match in matches)
@@ -87,5 +88,10 @@ namespace UltraMinifier.ConsoleApp
 
             UltraMinifiedValue = stringBuilder.ToString();
         }
+    }
+
+    public class CSS
+    {
+        public string RawStyles { get; set; }
     }
 }
